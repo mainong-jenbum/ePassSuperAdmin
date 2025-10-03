@@ -99,9 +99,17 @@
 ## 📱 Screenshots
 
 <div align="center">
-  <img src="https://via.placeholder.com/300x600/6200EE/FFFFFF?text=Dashboard" alt="Dashboard" width="200"/>
-  <img src="https://via.placeholder.com/300x600/03DAC5/FFFFFF?text=Permits" alt="Permits" width="200"/>
-  <img src="https://via.placeholder.com/300x600/3700B3/FFFFFF?text=Users" alt="Users" width="200"/>
+  <h3>📊 Dashboard & Statistics</h3>
+  <img src="screenshots/DashbaordOverallStatsAndAllSubDivisionWiseStats.jpg" alt="Dashboard Overview" width="300"/>
+  <img src="screenshots/SubDivisionStatsWithList.jpg" alt="Sub-Division Statistics" width="300"/>
+  
+  <h3>👥 User Management</h3>
+  <img src="screenshots/AdminUserStatsActiveInactiveAndList.jpg" alt="User Management" width="300"/>
+  <img src="screenshots/CreateNewAdminUser.jpg" alt="Create New Admin User" width="300"/>
+  
+  <h3>🏛️ Division Management</h3>
+  <img src="screenshots/CreateNewSubDivision.jpg" alt="Create New Sub-Division" width="300"/>
+  <img src="screenshots/IndividualSubDivisionStatsNewPassRequestExpiredRequestStatsAndList.jpg" alt="Individual Division Stats" width="300"/>
 </div>
 
 ## 🔧 Configuration
