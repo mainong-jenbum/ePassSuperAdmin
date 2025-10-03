@@ -74,8 +74,8 @@
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/epass-super-admin.git
-   cd epass-super-admin
+   git clone https://github.com/mainong-jenbum/ePassSuperAdmin.git
+   cd ePassSuperAdmin
    ```
 
 2. **Open in Android Studio**
