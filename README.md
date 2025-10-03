@@ -170,33 +170,64 @@ public class NetworkService {
 - `org.parceler:parceler-api:1.1.13`
 - `de.hdodenhof:circleimageview:3.1.0`
 
+---
+
 ## 🤝 Contributing
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+> **⚠️ Important Notice**: This project is **no longer maintained**. It was developed as a specific solution for COVID-19 travel restrictions in 2020.
+
+While the project is not actively maintained, the codebase serves as a reference for:
+- Android multi-step form implementation
+- RESTful API integration patterns
+- Material Design implementation
+- Firebase integration examples
+
+---
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is developed for educational and reference purposes. Please ensure compliance with local regulations and data protection laws when using or modifying this code.
 
-## 👨‍💻 Author
+---
 
-**Mainong Jenbum**
-- GitHub: [@mainong-jenbum](https://github.com/mainong-jenbum)
-- LinkedIn: [Mainong Jenbum](https://linkedin.com/in/mainong-jenbum)
 
-## 🙏 Acknowledgments
+## 👨‍💻 Developer
 
-- Developed during the COVID-19 pandemic to support digital governance
-- Built with modern Android development practices
-- Designed for scalability and maintainability
+**Developed by**: [[Mainong Jenbum](https://jenbum.com)]  
+**Year**: 2020  
+**Purpose**: COVID-19 Travel Pass Management  
+**Location**: Changlang District, Arunachal Pradesh, India
+
+---
+
+## 🏥 Project Status
+
+<div align="center">
+
+![Status](https://img.shields.io/badge/Status-No%20Longer%20Maintained-red?style=for-the-badge)
+
+**This project is no longer being maintained.**
+
+*Developed during COVID-19 pandemic (2020) for travel pass management in Changlang District, Arunachal Pradesh. The application served its purpose during the pandemic and is now archived for reference.*
+
+</div>
+
+---
+
+## 📞 Contact
+
+For questions about this project or to discuss the implementation:
+
+- **Email**: [mainong.jenbum@gmail.com]
+- **GitHub**: [[@mainong-jenbum](https://github.com/mainong-jenbum)]
+- **LinkedIn**: [[Mainong Jenbum](https://www.linkedin.com/in/mainongjenbum/)]
 
 ---
 
 <div align="center">
-  <p>Made with ❤️ during COVID-19 to support digital governance</p>
-  <p>© 2020 Mainong Jenbum. All rights reserved.</p>
+
+**Made with ❤️ for the people of Changlang District, Arunachal Pradesh**
+
+*During the challenging times of COVID-19 pandemic*
+
 </div>
