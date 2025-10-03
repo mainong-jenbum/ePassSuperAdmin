@@ -6,6 +6,10 @@
   <img src="https://img.shields.io/badge/Retrofit-2.9.0-blue?style=for-the-badge&logo=square" alt="Retrofit"/>
   <img src="https://img.shields.io/badge/Material%20Design-3.0-purple?style=for-the-badge&logo=material-design" alt="Material Design"/>
 
+  **A digital solution for travel pass applications during COVID-19 pandemic**
+
+*Developed for the residents of Changlang District, Arunachal Pradesh*
+
   [![Status](https://img.shields.io/badge/Status-No%20Longer%20Maintained-red?style=for-the-badge)](#-project-status)
   
 </div>
