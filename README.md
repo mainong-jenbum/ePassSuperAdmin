@@ -5,6 +5,9 @@
   <img src="https://img.shields.io/badge/Java-8-orange?style=for-the-badge&logo=java" alt="Java 8"/>
   <img src="https://img.shields.io/badge/Retrofit-2.9.0-blue?style=for-the-badge&logo=square" alt="Retrofit"/>
   <img src="https://img.shields.io/badge/Material%20Design-3.0-purple?style=for-the-badge&logo=material-design" alt="Material Design"/>
+
+  [![Status](https://img.shields.io/badge/Status-No%20Longer%20Maintained-red?style=for-the-badge)](#-project-status)
+  
 </div>
 
 ## 📱 Overview
