@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent">
+
+
+    <RelativeLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:orientation = "vertical">
+
+        <LinearLayout
+            android:id = "@+id/ll_container_title"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:orientation = "horizontal">
+
+            <TextView
+                android:id = "@+id/tv_title"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_marginStart = "16dp"
+                android:layout_marginTop = "16dp"
+                android:fontFamily = "sans-serif-condensed-medium"
+                android:text = "Title"
+                android:textAllCaps = "true"
+                android:textAppearance = "@style/TextAppearance.AppCompat.Large" />
+
+            <TextView
+                android:id = "@+id/tv_date_filter"
+                android:layout_width = "0dp"
+                android:layout_height = "24dp"
+                android:layout_gravity = "center_vertical"
+                android:layout_margin = "16dp"
+                android:layout_marginStart = "16dp"
+                android:layout_weight = "1"
+                android:drawableEnd = "@drawable/ic_date_range"
+                android:drawablePadding = "8dp"
+                android:gravity = "center|end"
+                android:text = "FROM ---- TO ----"
+                android:textColor = "@android:color/darker_gray"
+                android:textSize = "10sp" />
+        </LinearLayout>
+
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id = "@+id/srl_permit"
+            android:layout_width = "match_parent"
+            android:layout_height = "match_parent"
+            android:layout_below = "@+id/ll_container_title">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id = "@+id/rv_permits"
+                android:layout_width = "match_parent"
+                android:layout_height = "match_parent"
+                android:layout_marginBottom = "64dp"
+                android:visibility = "gone"
+                tools:listitem = "@layout/view_permit_item" />
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <TextView
+            android:id = "@+id/tv_no_item"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_centerInParent = "true"
+            android:gravity = "center"
+            android:text = "No item found"
+            android:visibility = "visible" />
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id = "@+id/efab_menu"
+        style = "@style/extendedFab"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_gravity = "end|bottom|center"
+        android:layout_margin = "@dimen/fab_margin"
+        android:text = "ACTIVE PERMITS"
+        android:textAllCaps = "false"
+        android:textColor = "#fff9d815"
+        android:textSize = "16.0sp"
+        android:visibility = "visible"
+        app:icon = "@drawable/ic_menu"
+        app:iconPadding = "8.0dip" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

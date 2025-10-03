@@ -1,0 +1,21 @@
+<menu xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools">
+    <group android:id="@+id/permit_request">
+        <item
+            android:id = "@+id/item_active_req"
+            android:title = "Active Request" />
+        <item
+            android:id = "@+id/item_expired_req"
+            android:title = "Expired Request" />
+
+        <item
+            android:id = "@+id/item_rejected_req"
+            android:title = "Rejected Request" />
+    </group>
+
+    <group android:id="@+id/permit">
+        <item
+            android:id = "@+id/item_expired_permit"
+            android:title = "Expired Permit" />
+    </group>
+</menu>

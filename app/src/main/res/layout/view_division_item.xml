@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:layout_width = "fill_parent"
+    android:layout_height = "wrap_content"
+    android:layout_marginStart = "8dp"
+    android:layout_marginTop = "4dp"
+    android:layout_marginEnd = "8dp"
+    android:layout_marginBottom = "4dp"
+    app:cardBackgroundColor = "@android:color/white"
+    app:cardCornerRadius = "4dp"
+    app:cardElevation = "4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width = "fill_parent"
+        android:layout_height = "wrap_content"
+        android:paddingBottom = "16dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id = "@+id/tv_timestamp"
+            android:layout_width = "0.0dip"
+            android:layout_height = "wrap_content"
+            android:layout_marginTop = "20.0dip"
+            android:gravity = "center_vertical"
+            android:textColor = "#ff737475"
+            android:textSize = "12.0sp"
+
+            app:layout_constraintStart_toEndOf = "@+id/tv_division_name"
+            app:layout_constraintTop_toTopOf = "parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id = "@+id/tv_id"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_marginTop = "16dp"
+            android:layout_marginEnd = "16dp"
+            android:text = "#--"
+            android:textColor = "#ff737475"
+            android:textSize = "12.0sp"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintTop_toTopOf = "parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id = "@+id/tv_status"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_marginStart = "16dp"
+            android:text = "--"
+            android:textColor = "@android:color/holo_red_light"
+            android:textSize = "12.0sp"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toBottomOf = "@+id/tv_division_name" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id = "@+id/tv_payment_type"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_marginEnd = "16dp"
+            android:text = "ID"
+            android:textColor = "#ff000000"
+            android:textSize = "12.0sp"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintTop_toBottomOf = "@+id/tv_id" />
+
+        <View
+            android:id = "@+id/view_line"
+            android:layout_width = "fill_parent"
+            android:layout_height = "1.0dip"
+            android:layout_marginTop = "8dp"
+            android:background = "#ffe3e4e5"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toBottomOf = "@+id/tv_status" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id = "@+id/tv_auth_user"
+            android:layout_width = "0.0dip"
+            android:layout_height = "wrap_content"
+            android:layout_marginStart = "16dp"
+            android:layout_marginTop = "12dp"
+            android:layout_marginEnd = "16dp"
+            android:ellipsize = "end"
+            android:maxLines = "2"
+            android:text = "-"
+            android:textAppearance = "@style/TextAppearance.AppCompat.Medium"
+            android:textColor = "#ff000000"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toBottomOf = "@+id/view_line" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id = "@+id/tv_designation"
+            android:layout_width = "0.0dip"
+            android:layout_height = "wrap_content"
+            android:layout_marginStart = "16dp"
+            android:layout_marginEnd = "16dp"
+            android:ellipsize = "end"
+            android:maxLines = "2"
+            android:text = "-"
+            android:textSize = "12.0sp"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toBottomOf = "@+id/tv_auth_user" />
+
+        <TextView
+            android:id = "@+id/tv_division_name"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_marginStart = "16dp"
+            android:layout_marginTop = "20.0dip"
+            android:text = "-"
+            android:textAppearance = "@style/TextAppearance.AppCompat.Large"
+            android:textColor = "@android:color/black"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toTopOf = "parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

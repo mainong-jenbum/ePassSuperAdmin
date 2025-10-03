@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:id = "@+id/container_frag"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:orientation = "vertical">
+
+    <LinearLayout
+        android:id = "@+id/ll_container_header"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:background = "@color/colorAccent"
+        android:gravity = "bottom"
+        android:orientation = "horizontal"
+        android:paddingStart = "16dp"
+        android:paddingTop = "16dp"
+        android:paddingEnd = "8dp">
+
+        <LinearLayout
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_marginBottom = "8dp"
+            android:layout_weight = "1"
+            android:orientation = "vertical">
+
+            <TextView
+                android:id = "@+id/tv_title"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:fontFamily = "sans-serif-black"
+                android:text = "New Admin User"
+                android:textAppearance = "@style/TextAppearance.AppCompat.Medium"
+                android:textColor = "@android:color/white"
+                android:textStyle = "bold" />
+
+            <View
+                android:layout_width = "72dp"
+                android:layout_height = "2dp"
+                android:layout_marginTop = "4dp"
+                android:layout_marginBottom = "4dp"
+                android:background = "@android:color/white" />
+
+            <TextView
+                android:id = "@+id/tv_description"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:fontFamily = "sans-serif-condensed"
+                android:text = "Enter all necessary information to register a new Admin User."
+                android:textAppearance = "@style/TextAppearance.AppCompat.Small"
+                android:textColor = "@android:color/white"
+                android:textSize = "12sp" />
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id = "@+id/iv_photo"
+            android:layout_width = "120dp"
+            android:layout_height = "96dp"
+            android:layout_marginBottom = "4dp"
+            android:src = "@drawable/ic_user"
+            app:civ_border_color = "@android:color/white"
+            app:civ_border_width = "2dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width = "match_parent"
+        android:layout_height = "0dp"
+        android:layout_weight = "1"
+        android:fillViewport = "true">
+
+        <LinearLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:orientation = "vertical"
+            android:padding = "16dp">
+
+            <TextView
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "16dp"
+                android:layout_marginBottom = "4dp"
+                android:fontFamily = "sans-serif-condensed-medium"
+                android:text = "Division"
+                android:textAppearance = "@style/TextAppearance.AppCompat.Medium"
+                android:textColor = "@android:color/black" />
+
+            <Spinner
+                android:id = "@+id/spin_city"
+                android:layout_width = "match_parent"
+                android:layout_height = "45dp"
+                android:background = "@drawable/bg_text_view"
+                android:gravity = "center_vertical"
+                android:textSize = "12sp" />
+
+            <TextView
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "8dp"
+                android:layout_marginBottom = "4dp"
+                android:fontFamily = "sans-serif-condensed-medium"
+                android:text = "Name"
+                android:textAppearance = "@style/TextAppearance.AppCompat.Medium"
+                android:textColor = "@android:color/black" />
+
+            <EditText
+                android:id = "@+id/et_name"
+                android:layout_width = "match_parent"
+                android:layout_height = "45dp"
+                android:background = "@drawable/bg_text_view"
+                android:gravity = "center_vertical"
+                android:imeOptions = "actionNext"
+                android:inputType = "text"
+                android:maxLines = "1"
+                android:paddingStart = "8dp"
+                android:paddingEnd = "8dp"
+                android:textSize = "12sp" />
+
+            <TextView
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "16dp"
+                android:layout_marginBottom = "4dp"
+                android:fontFamily = "sans-serif-condensed-medium"
+                android:text = "Phone"
+                android:textAppearance = "@style/TextAppearance.AppCompat.Medium"
+                android:textColor = "@android:color/black" />
+
+            <EditText
+                android:id = "@+id/et_phone"
+                android:layout_width = "match_parent"
+                android:layout_height = "45dp"
+                android:background = "@drawable/bg_text_view"
+                android:digits = "0123456789"
+                android:imeOptions = "actionNext"
+                android:inputType = "number"
+                android:maxLength = "10"
+                android:maxLines = "1"
+                android:paddingStart = "8dp"
+                android:paddingEnd = "8dp"
+                android:textSize = "12sp" />
+
+            <TextView
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "16dp"
+                android:layout_marginBottom = "4dp"
+                android:fontFamily = "sans-serif-condensed-medium"
+                android:text = "Password"
+                android:textAppearance = "@style/TextAppearance.AppCompat.Medium"
+                android:textColor = "@android:color/black" />
+
+            <EditText
+                android:id = "@+id/et_password"
+                android:layout_width = "match_parent"
+                android:layout_height = "45dp"
+                android:background = "@drawable/bg_text_view"
+                android:imeOptions = "actionNext"
+                android:inputType = "text"
+                android:maxLines = "1"
+                android:paddingStart = "8dp"
+                android:paddingEnd = "8dp"
+                android:textSize = "12sp" />
+
+            <TextView
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "16dp"
+                android:layout_marginBottom = "4dp"
+                android:fontFamily = "sans-serif-condensed-medium"
+                android:text = "Designation Abbr"
+                android:textAppearance = "@style/TextAppearance.AppCompat.Medium"
+                android:textColor = "@android:color/black" />
+
+            <EditText
+                android:id = "@+id/et_designation_abbr"
+                android:layout_width = "match_parent"
+                android:layout_height = "45dp"
+                android:background = "@drawable/bg_text_view"
+                android:hint = "eg. ADC, DC EAC etc"
+                android:imeOptions = "actionNext"
+                android:inputType = "text"
+                android:maxLines = "1"
+                android:maxLength="6"
+                android:paddingStart = "8dp"
+                android:paddingEnd = "8dp"
+                android:textSize = "12sp" />
+
+            <TextView
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "16dp"
+                android:layout_marginBottom = "4dp"
+                android:fontFamily = "sans-serif-condensed-medium"
+                android:text = "Designation"
+                android:textAppearance = "@style/TextAppearance.AppCompat.Medium"
+                android:textColor = "@android:color/black" />
+
+            <EditText
+                android:id = "@+id/et_designation"
+                android:layout_width = "match_parent"
+                android:layout_height = "45dp"
+                android:background = "@drawable/bg_text_view"
+                android:hint = "[NOTE] This will be printed in the Permit"
+                android:imeOptions = "actionNext"
+                android:inputType = "text"
+                android:maxLines = "1"
+                android:paddingStart = "8dp"
+                android:paddingEnd = "8dp"
+                android:textSize = "12sp" />
+
+            <TextView
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "16dp"
+                android:layout_marginBottom = "4dp"
+                android:fontFamily = "sans-serif-condensed-medium"
+                android:text = "Signature"
+                android:textAppearance = "@style/TextAppearance.AppCompat.Medium"
+                android:textColor = "@android:color/black" />
+
+            <TextView
+                android:id = "@+id/tv_signature"
+                android:layout_width = "match_parent"
+                android:layout_height = "45dp"
+                android:background = "@drawable/bg_text_view"
+                android:drawableStart = "@drawable/ic_upload"
+                android:drawablePadding = "@dimen/grid_spacing_8dp"
+                android:gravity = "center_vertical"
+                android:paddingStart = "8dp"
+                android:paddingEnd = "8dp"
+                android:text = "upload signature"
+                android:textSize = "12sp" />
+
+            <TextView
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "16dp"
+                android:layout_marginBottom = "4dp"
+                android:fontFamily = "sans-serif-condensed-medium"
+                android:text = "Address"
+                android:textAppearance = "@style/TextAppearance.AppCompat.Medium"
+                android:textColor = "@android:color/black" />
+
+            <EditText
+                android:id = "@+id/et_address"
+                android:layout_width = "match_parent"
+                android:layout_height = "45dp"
+                android:background = "@drawable/bg_text_view"
+                android:gravity = "center_vertical"
+                android:hint = "eg. MIAO :: CHANGLANG DISTRICT"
+                android:imeOptions = "actionNext"
+                android:inputType = "text"
+                android:maxLines = "1"
+                android:paddingStart = "8dp"
+                android:paddingEnd = "8dp"
+                android:textSize = "12sp" />
+
+            <Button
+                android:id = "@+id/btn_register"
+                android:layout_width = "wrap_content"
+                android:layout_height = "45dp"
+                android:layout_marginTop = "24dp"
+                android:text = "Register" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
